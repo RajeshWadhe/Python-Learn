@@ -1,0 +1,17 @@
+
+--> Keywords
+
+****Keywords****
+1) print(False==0)
+    -->True
+  print(True==1)
+    -->False
+
+2) print(True+True+True)
+   3
+
+3) print(True+True+False)
+   2
+   
+   
+***
