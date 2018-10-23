@@ -1,1 +1,25 @@
+Basics
+
+--Python was developed by Guido van Rossum in early 1990’s.
+
+***List***
+- List is the most basic Data Structure in python. List is mutable data structure 
+  i.e items can be added to list later after the list creation.
+- List uses append() function to add items in the list.
+ 
+Create a list --> num = []
+add items     --> num.append(45.7), num.append('rajesh'), num.append(20)
+print list    --> print(num) or num      
+output        --> [45.7, 'rajesh',20]
+
+
+***Comment***
+1) Single line comment --> #commented content
+2) Multi line comment  --> """ commented content """
+
+# Python3 program to get input from user accepting integer from the user.
+num1 = int(input("Enter num1: "))  
+num2 = int(input("Enter num2: ")) 
+num3 = num1 * num2 
+print("Product is: ", num3) 
 
