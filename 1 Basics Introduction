@@ -86,6 +86,20 @@ def Main():
 if __name__=="__main__": 
     Main() 
 
+***Unicode***
+--> print(type('default string ')) 
+Output -- <class 'str'>
+--> print(type(b'string with b ')) 
+Output -- <class 'bytes'>
+
+***Error Handling***
+try: 
+     trying_to_check_error 
+except NameError as err:           # 'as' is needed in Python 3.x 
+     print (err, 'Error Caused') 
+ 
+Output in Python 3.x : 
+name 'trying_to_check_error' is not defined Error Caused 
 
 
 
