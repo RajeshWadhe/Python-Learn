@@ -17,9 +17,81 @@ output        --> [45.7, 'rajesh',20]
 1) Single line comment --> #commented content
 2) Multi line comment  --> """ commented content """
 
-# Python3 program to get input from user accepting integer from the user.
+
+***Programs****
+1) #---> Python3 program to get input from user accepting integer from the user.
 num1 = int(input("Enter num1: "))  
 num2 = int(input("Enter num2: ")) 
 num3 = num1 * num2 
 print("Product is: ", num3) 
+
+2) #----> Python program to illustrate selection statement  
+num1 = 34
+if(num1>12): 
+    print("Num1 is good") 
+elif(num1>35): 
+    print("Num2 is not gooooo....") 
+else: 
+    print("Num2 is great") 
+
+3) #---> Python program to illustrate functions 
+def hello(): 
+    print("hello") 
+    print("hello again") 
+hello()  
+#calling function 
+hello()  
+
+
+4) #---> Python program to illustrate function with main 
+def getInteger(): 
+    result = int(input("Enter integer: ")) 
+    return result 
+    
+def Main(): 
+    print("Started") 
+# calling the getInteger function and storing its returned value in the output variable 
+    output = getInteger()      
+    print(output) 
+  
+# now we are required to tell Python for 'Main' function existence 
+if __name__=="__main__": 
+    Main() 
+    
+5) ---> Iteration Looping
+# Python program to illustrate a simple for loop 
+  
+a) for step in range(5):     
+     print(step)    
+Output --> 0 1 2 3 4 --> in newline
+
+b) for step in range(5):
+     print(step, end = ' ')
+Output --> [0 1 2 3 4] --> in same line
+
+c) for step in range(1,5):
+     print(step, end = ' ')
+Output -->  [1 2 3 4] -->  on same line
+
+
+6) --> Modules
+
+# Python program to illustrate math module 
+import math 
+def Main(): 
+    num = float(input("Enter a number: ")) 
+    # fabs is used to get the absolute value of a decimal 
+    num = math.fabs(num)  
+    print(num) 
+if __name__=="__main__": 
+    Main() 
+
+
+
+
+
+
+
+
+
 
