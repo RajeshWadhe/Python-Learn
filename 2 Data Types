@@ -1,0 +1,65 @@
+*****Strings******
+
+1) Formatting of String
+
+# Python Program for 
+# Formatting of Strings 
+  
+# Default order 
+String1 = "{} {} {}".format('Geeks', 'For', 'Life') 
+print("Print String in default order: ") 
+print(String1) 
+  
+# Positional Formatting 
+String1 = "{1} {0} {2}".format('Geeks', 'For', 'Life') 
+print("\nPrint String in Positional order: ") 
+print(String1) 
+  
+# Keyword Formatting 
+String1 = "{l} {f} {g}".format(g = 'Geeks', f = 'For', l = 'Life') 
+print("\nPrint String in order of Keywords: ") 
+print(String1) 
+  
+# Formatting of Integers 
+String1 = "{0:b}".format(16) 
+print("\nBinary representation of 16 is ") 
+print(String1) 
+  
+# Formatting of Floats 
+String1 = "{0:e}".format(165.6458) 
+print("\nExponent representation of 165.6458 is ") 
+print(String1) 
+  
+# Rounding off Integers 
+String1 = "{0:.2f}".format(1/6) 
+print("\none-sixth is : ") 
+print(String1) 
+
+# String alignment 
+String1 = "|{:<10}|{:^10}|{:>10}|".format('Geeks','for','Geeks') 
+print("\nLeft, center and right alignment with Formatting: ") 
+print(String1)
+
+----> Output----->
+Print String in default order: 
+Geeks For Life
+
+Print String in Positional order: 
+For Geeks Life
+
+Print String in order of Keywords: 
+Life For Geeks
+
+Binary representation of 16 is 
+10000
+
+Exponent representation of 165.6458 is 
+1.656458e+02
+
+one-sixth is : 
+0.17
+
+Left, center and right alignment with Formatting: 
+|Geeks     |   for    |     Geeks|
+
+
