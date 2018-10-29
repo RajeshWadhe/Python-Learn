@@ -12,7 +12,157 @@ type such as Strings, Integers and tuples, but the key-values can be repeated an
 
 1)*********************Creating a Dictionary**************************
 
+#creating dictiony
+dict = {}
+print("\nempty dictionary")
+print(dict)
 
+#creating dictionary with integer keys
+dict = {1:'geeks',2:'for',3:'geeks'}
+print("\ndictionary with usage of integer keys : ")
+print(dict)
+
+#creating dictionary with mixed keys
+dict = {'name':'geeks',1:[1,2,3,4,5]}
+print("\ndictionary with mixed keys: ")
+print(dict)
+
+#creating dictionary with dict() method
+dict1 = {1:'geeks',2:'for',3:'geeks'}
+#dict1 = dict({1:'geeks',2:'for',3:'geeks'})
+print("\ncreating dictionary with use of dict(): ")
+#print(dict1)
+print(dict1.values())
+
+#creating dictionary with each item as a pair
+dict1 = dict([(1:'geeks'),(2:'for'),(3:'geeks')])
+#dict1 = dict({1:'geeks',2:'for',3:'geeks'})
+print("\ncreating dictionary with each item as pair: ")
+print(dict1)
+#print(dict1.values())
+
+#creating a nested dictionary
+dict1 = {1:{'A':'geeks','B':'for','C':'geeks'},
+         2:{'D':'welcome','E':'To','F':'geeks'}}
+print("\nnested dictionary")
+print(dict1)
+
+-------------> Output ----------------->
+empty dictionary
+{}
+
+dictionary with usage of integer keys : 
+{1: 'geeks', 2: 'for', 3: 'geeks'}
+
+dictionary with mixed keys: 
+{1: [1, 2, 3, 4, 5], 'name': 'geeks'}
+Traceback (most recent call last):
+  File "C:/Users/rwadhe/Documents/Python Geeks Algorithms/2 Data Types/tuple3 dictionary.py", line 18, in <module>
+    dict1 = dict({1:'geeks',2:'for',3:'geeks'})
+TypeError: 'dict' object is not callable
+nested dictionary
+{1: {'B': 'for', 'C': 'geeks', 'A': 'geeks'}, 2: {'E': 'To', 'F': 'geeks', 'D': 'welcome'}}
+
+
+2) **********************Adding elements to a Dictionary*****************************
+
+
+# Creating an empty Dictionary 
+Dict = {} 
+print("Empty Dictionary: ") 
+print(Dict) 
+  
+# Adding elements one at a time 
+Dict[0] = 'Geeks'
+Dict[2] = 'For'
+Dict[3] = 1
+print("\nDictionary after adding 3 elements: ") 
+print(Dict) 
+  
+# Adding set of values to a single Key 
+Dict['Value_set'] = 2, 3, 4
+print("\nDictionary after adding 3 elements: ") 
+print(Dict) 
+  
+# Updating existing Key's Value 
+Dict[2] = 'Welcome'
+print("\nUpdated key value: ") 
+print(Dict) 
+  
+# Adding Nested Key value to Dictionary 
+Dict[5] = {'Nested' :{'1' : 'Life', '2' : 'Geeks'}} 
+print("\nAdding a Nested Key: ") 
+print(Dict) 
+
+------------> Output --------------->
+
+Empty Dictionary: 
+{}
+
+Dictionary after adding 3 elements: 
+{0: 'Geeks', 2: 'For', 3: 1}
+
+Dictionary after adding 3 elements: 
+{0: 'Geeks', 2: 'For', 3: 1, 'Value_set': (2, 3, 4)}
+
+Updated key value: 
+{0: 'Geeks', 2: 'Welcome', 3: 1, 'Value_set': (2, 3, 4)}
+
+Adding a Nested Key: 
+{0: 'Geeks', 2: 'Welcome', 3: 1, 5: {'Nested': {'1': 'Life', '2': 'Geeks'}}, 'Value_set': (2, 3, 4)}
+
+3) ************************Removing Elements from Dictionary**************************
+
+ict = { 5 : 'Welcome', 6 : 'To', 7 : 'Geeks', 
+        'A' : {1 : 'Geeks', 2 : 'For', 3 : 'Geeks'}, 
+        'B' : {1 : 'Geeks', 2 : 'Life'}} 
+print("Initial Dictionary: ") 
+print(Dict) 
+  
+# Deleting a Key value 
+del Dict[6] 
+print("\nDeleting a specific key: ") 
+print(Dict) 
+  
+# Deleting a Key from Nested Dictionary 
+del Dict['A'][2] 
+print("\nDeleting a key from Nested Dictionary: ") 
+print(Dict) 
+  
+# Deleting a Key using pop() 
+Dict.pop(5) 
+print("\nPopping specific element: ") 
+print(Dict) 
+  
+# Deleting a Key using popitem() 
+Dict.popitem() 
+print("\nPops first element: ") 
+print(Dict) 
+  
+# Deleting entire Dictionary 
+Dict.clear() 
+print("\nDeleting Entire Dictionary: ") 
+print(Dict) 
+
+------------> Output ------------->
+
+Initial Dictionary: 
+{'A': {1: 'Geeks', 2: 'For', 3: 'Geeks'}, 'B': {1: 'Geeks', 2: 'Life'}, 5: 'Welcome', 6: 'To', 7: 'Geeks'}
+
+Deleting a specific key: 
+{'A': {1: 'Geeks', 2: 'For', 3: 'Geeks'}, 'B': {1: 'Geeks', 2: 'Life'}, 5: 'Welcome', 7: 'Geeks'}
+
+Deleting a key from Nested Dictionary: 
+{'A': {1: 'Geeks', 3: 'Geeks'}, 'B': {1: 'Geeks', 2: 'Life'}, 5: 'Welcome', 7: 'Geeks'}
+
+Popping specific element: 
+{'A': {1: 'Geeks', 3: 'Geeks'}, 'B': {1: 'Geeks', 2: 'Life'}, 7: 'Geeks'}
+
+Pops first element: 
+{'B': {1: 'Geeks', 2: 'Life'}, 7: 'Geeks'}
+
+Deleting Entire Dictionary: 
+{}
 
 
 
