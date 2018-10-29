@@ -1,1 +1,151 @@
 
+***********Data Types---> Tuples***********
+
+****Tuple****
+
+The important difference between a list and a tuple is that tuples are immutable.
+Also, Tuples are hashable whereas lists are not.
+
+1) ************Creating a Tuple***************
+
+# Python program to demonstrate  addition of elements in a Set 
+  
+# Creating an empty tuple 
+Tuple1 = () 
+print("Initial empty Tuple: ") 
+print (Tuple1) 
+  
+# Creating a Tuple with the use of Strings 
+Tuple1 = ('Geeks', 'For') 
+print("\nTuple with the use of String: ") 
+print(Tuple1) 
+  
+# Creating a Tuple with the use of list 
+list1 = [1, 2, 4, 5, 6] 
+print("\nTuple using List: ") 
+print(tuple(list1)) 
+  
+# Creating a Tuple with the use of loop 
+Tuple1 = ('Geeks') 
+n = 5
+print("\nTuple with a loop") 
+for i in range(int(n)): 
+    Tuple1 = (Tuple1,) 
+    print(Tuple1) 
+  
+# Creating a Tuple with the use of built-in function 
+Tuple1 = tuple('Geeks') 
+print("\nTuple with the use of function: ") 
+print(Tuple1) 
+  
+# Creating a Tuple with Mixed Datatypes 
+Tuple1 = (5, 'Welcome', 7, 'Geeks') 
+print("\nTuple with Mixed Datatypes: ") 
+print(Tuple1) 
+  
+# Creating a Tuple with nested tuples 
+Tuple1 = (0, 1, 2, 3) 
+Tuple2 = ('python', 'geek') 
+Tuple3 = (Tuple1, Tuple2) 
+print("\nTuple with nested tuples: ") 
+print(Tuple3) 
+  
+# Creating a Tuple with repetition 
+Tuple1 = ('Geeks',) * 3
+print("\nTuple with repetition: ") 
+print(Tuple1) 
+
+----> Output----->
+
+Initial empty Tuple: 
+()
+
+Tuple with the use of String: 
+('Geeks', 'For')
+
+Tuple using List: 
+(1, 2, 4, 5, 6)
+
+Tuple with a loop
+('Geeks',)
+(('Geeks',),)
+((('Geeks',),),)
+(((('Geeks',),),),)
+((((('Geeks',),),),),)
+
+Tuple with the use of function: 
+('G', 'e', 'e', 'k', 's')
+
+Tuple with Mixed Datatypes: 
+(5, 'Welcome', 7, 'Geeks')
+
+Tuple with nested tuples: 
+((0, 1, 2, 3), ('python', 'geek'))
+
+Tuple with repetition: 
+('Geeks', 'Geeks', 'Geeks')
+
+
+
+2)***************Concatenation of Tuples******************
+
+#concatenation of tuples
+tuple1 = (0,1,2,3,4)
+tuple2 = ('geeks','for','life')
+tuple3 = tuple1 + tuple2
+print(tuple1)
+print(tuple2)
+print(tuple3)
+
+-----> Output -------->
+(0, 1, 2, 3, 4)
+('geeks', 'for', 'life')
+(0, 1, 2, 3, 4, 'geeks', 'for', 'life')
+
+
+3) *********************Slicing of Tuple************************
+
+
+# Slicing of a Tuple 
+# Slicing of a Tuple with Numbers 
+Tuple1 = tuple('GEEKSFORGEEKS') 
+  
+# Removing First element 
+print("Removal of First Element: ") 
+print(Tuple1[1:]) 
+  
+# Reversing the Tuple  
+print("\nTuple after sequence of Element is reversed: ") 
+print(Tuple1[::-1]) 
+  
+# Printing elements of a Range 
+print("\nPrinting elements between Range 4-9: ") 
+print(Tuple1[4:9]) 
+
+-----> Output ------>
+
+Removal of First Element: 
+('E', 'E', 'K', 'S', 'F', 'O', 'R', 'G', 'E', 'E', 'K', 'S')
+
+Tuple after sequence of Element is reversed: 
+('S', 'K', 'E', 'E', 'G', 'R', 'O', 'F', 'S', 'K', 'E', 'E', 'G')
+
+Printing elements between Range 4-9: 
+('S', 'F', 'O', 'R', 'G')
+
+3) *****************Deleting a Tuple********************
+
+# Deleting a Tuple 
+  
+Tuple1 = (0, 1, 2, 3, 4) 
+del Tuple1   
+print(Tuple1) 
+
+---------> Output ------------>
+
+Traceback (most recent call last):
+File “/home/efa50fd0709dec08434191f32275928a.py”, line 7, in 
+print(Tuple1)
+NameError: name ‘Tuple1’ is not defined
+
+
