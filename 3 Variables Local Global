@@ -1,1 +1,63 @@
 
+1) ************Local and Global variables ****************
+
+
+# This function modifies global variable 's' 
+def f(): 
+    global s 
+    print s 
+    s = "Look for Geeksforgeeks Python Section"
+    print s  
+  
+# Global Scope 
+s = "Python is great!" 
+f() 
+print s 
+
+---------- <Output> ---------------
+
+Python is great!
+Look for Geeksforgeeks Python Section.
+Look for Geeksforgeeks Python Section.
+
+
+
+2) *****************local and global example ******************
+
+a = 1
+  
+# Uses global because there is no local 'a' 
+def f(): 
+    print 'Inside f() : ', a 
+  
+# Variable 'a' is redefined as a local 
+def g():     
+    a = 2
+    print 'Inside g() : ',a 
+  
+# Uses global keyword to modify global 'a' 
+def h():     
+    global a 
+    a = 3
+    print 'Inside h() : ',a 
+  
+# Global scope 
+print 'global : ',a 
+f() 
+print 'global : ',a 
+g() 
+print 'global : ',a 
+h() 
+print 'global : ',a 
+
+
+--------------- <Output> -------------------
+
+global :  1
+Inside f() :  1
+global :  1
+Inside g() :  2
+global :  1
+Inside h() :  3
+global :  3
+
