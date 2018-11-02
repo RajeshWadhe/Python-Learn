@@ -1,1 +1,43 @@
 
+*****************Ternary operators**********************
+
+1)# Python program to demonstrate ternary operator 
+
+a, b = 10, 20
+min = a if a < b else b 
+
+# Use tuple for selecting an item 
+print( (b, a) [a < b] ) 
+  
+# Use Dictionary for selecting an item 
+print({True: a, False: b} [a < b]) 
+  
+# lamda is more efficient than above two methods because in lambda  we are assure that 
+# only one expression will be evaluated unlike in tuple and Dictionary 
+print((lambda: b, lambda: a)[a < b]()) 
+
+----------<Output>------------
+10
+10
+10
+10
+
+2) *********Program ****************
+
+print ("Both a and b are equal" if a == b else "a is greater than b"
+        if a > b else "b is greater than a") 
+a, b = 10, 20
+  
+if a != b: 
+    if a > b: 
+        print("a is greater than b") 
+    else: 
+        print("b is greater than a") 
+else: 
+    print("Both a and b are equal") 
+
+-------------<Output>----------------
+Output: b is greater than a
+
+
+
