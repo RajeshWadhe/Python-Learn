@@ -1,1 +1,77 @@
 
+************************Looping Techniques in Python*************************
+
+1) ---Using enumerate()-------
+for key, value in enumerate(['The', 'Big', 'Bang', 'Theory']): 
+    print(key, value) 
+
+---------<Output>----------
+0 The
+1 Big
+2 Bang
+3 Theory
+
+
+2) -----Using zip()-----
+questions = ['name', 'colour', 'shape'] 
+answers = ['apple', 'red', 'a circle'] 
+for question, answer in zip(questions, answers): 
+    print('What is your {0}?  I am {1}.'.format(question, answer))
+
+---------<Output>----------
+What is your name?  I am apple.
+What is your color?  I am red.
+What is your shape?  I am a circle.
+
+
+3) ------Using iteritem()--------
+d = { "geeks" : "for", "only" : "geeks" } 
+print ("The key value pair using iteritems is : ") 
+for i,j in d.items(): 
+    print i,j 
+
+-------<Output>---------
+The key value pair using items is : 
+geeks for
+only geeks
+
+king = {'Akbar': 'The Great', 'Chandragupta': 'The Maurya', 'Modi' : 'The Changer'} 
+# using items to print the dictionary key-value pair 
+for key, value in king.items(): 
+    print(key, value)
+    
+-------<Output>---------
+Akbar The Great
+Modi The Changer
+Chandragupta The Maurya
+
+
+4) -------Using sorted() and set()----------
+lis = [ 1 , 3, 5, 6, 2, 1, 3 ]   
+# using sorted() to print the list in sorted order 
+print ("The list in sorted order is : ") 
+for i in sorted(lis) : 
+    print (i,end=" ") 
+print () 
+print ("The list in sorted order (without duplicates) is : ") 
+for i in sorted(set(lis)) : 
+    print (i,end=" ") 
+
+-------<Output>-------
+The list in sorted order is : 
+1 1 2 3 3 5 6 
+The list in sorted order (without duplicates) is : 
+1 2 3 5 6
+
+5) --------Using reversed()-------
+lis = [ 1 , 3, 5, 6, 2, 1, 3 ] 
+print ("The list in reversed order is : ") 
+for i in reversed(lis) : 
+    print (i,end=" ") 
+    
+-------<Output>-------
+The list in reversed order is : 
+3 1 2 6 5 3 1 
+
+
+    
