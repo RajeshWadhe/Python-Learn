@@ -1,1 +1,54 @@
 
+1)************Looping**********
+
+#C-style approach
+cars=["aston","audi","McLaren"]
+i=0
+while(i<len(cars)):
+    print(cars[i],end=" ")
+    i=i+1
+
+print()
+for x in cars:
+    print(x,end=" ")
+
+print()
+for y in range(len(cars)):
+    print(cars[y],end=" ")
+
+print()
+for z,a in enumerate(cars):
+    print(a,end=" ")
+
+print()
+for d in enumerate(cars):
+    print(x[0],x[1])
+
+print()
+for d in enumerate(cars):
+    print(cars)
+    
+    
+2)***********Looping extensions*************
+
+#looping extensions
+cars=["aston","audi","McLaren"]
+accessories=["GPS kit","car repair-tool kit"]
+prices = {1:"570000$",2:"680000$",3:"450000$", 
+          4:"890000$", 5:"4500$"}
+for index,c in enumerate(cars,start=1):
+    print("car: %s  Price: %s" %(c,prices[index]))
+
+for index,a in enumerate(accessories,start=1):
+    print("Accessory: %s  Price: %s" %(a,prices[index+len(cars)]))
+
+----------<Output>-----------
+Car: Aston Price: 570000$
+Car: Audi Price: 68000$
+Car: McLaren Price: 450000$
+Accessory: GPS kit Price: 890000$
+Accessory: Car repair-tool kit Price: 4500$
+
+
+
+
