@@ -1,0 +1,32 @@
+#code1
+for city in ["berlin","vienna","zurich"]:
+    print(city)
+print()
+
+for city in ["python","perl","ruby"]:
+    print(city)
+print()
+
+for char in "Iteration is easy":
+    print(char,end=" ")
+
+
+#code2
+cities = ["berlin","vienna","zurich"]
+iterator_obj = iter(cities)
+
+print(next(iterator_obj))
+print(next(iterator_obj))
+print(next(iterator_obj))
+
+#code3
+def iterable(obj):
+    try:
+        iter(obj)
+        return True
+    except TypeError:
+        return False
+
+#Driver code
+for element in [34, [4,5],  (4,5), {"a":4}, "dfsdf",4.5]:
+    print(iterable(element))
