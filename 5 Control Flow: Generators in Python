@@ -1,4 +1,4 @@
-
+#code1
 #generator function
 def simpleGeneratorFun():
     yield 1
@@ -9,7 +9,19 @@ print(x.__next__());
 print(x.__next__());
 print(x.__next__());
 
+Output--->
+1
+2
+3
+0
+1
+1
+2
+3
 
+***********************************************
+
+#code2
 #simple generator
 def fib(limit):
     a,b=0,1
@@ -22,10 +34,41 @@ print(x.__next__());
 print(x.__next__());
 print(x.__next__());
 print(x.__next__());
-
 print("\nUsing for in loop")
-
 for i in fib(5):
       print(i)
 
+Output--->
+Using for in loop
+0
+1
+1
+2
+3
+
+************************************************
+
+#code3
+def generator():
+    t=1
+    print("first result is",t)
+    yield t
+
+    t+=1
+    print("second result is",t)
+    yield t
+
+    t+=1
+    print("third result is",t)
+    yield t
+
+call= generator()
+next(call)
+next(call)
+next(call)
+
+Output--->
+first result is 1
+second result is 2
+third result is 3
 
